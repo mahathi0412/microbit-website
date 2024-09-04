@@ -1,0 +1,19 @@
+#home-intro img {
+    width: 200px;
+    transition: transform 0.5s ease;
+}
+
+#home-intro img:hover {
+    transform: scale(1.1);
+}
+
+#home-intro {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.fact {
+    flex: 0 0 300px;
+    margin-right: 20px;
+}
