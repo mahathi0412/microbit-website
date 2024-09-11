@@ -1,50 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Micro:bit Projects - Home</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Micro:bit Website</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <style>
+      /* Add background image to the body */
+      body {
+        background-image: url('images/background1.jpg'); /* Adjust path as needed */
+        background-size: cover; /* Cover the full page */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Don't repeat the image */
+        background-attachment: fixed; /* Make the image fixed during scroll */
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <!-- Navigation Bar -->
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="components.html">Components</a></li>
-            <li><a href="coding.html">Coding with Micro:bits</a></li>
-            <li><a href="projects.html">Project Ideas</a></li>
-            <li><a href="help.html">Help</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="components.html">Components</a></li>
+        <li><a href="coding.html">Coding with Micro:bits</a></li>
+        <li><a href="projects.html">Project Ideas</a></li>
+        <li><a href="help.html">Help</a></li>
+      </ul>
+      <div class="brand">
+        <span>Oregon MESA | Micro:bit</span>
+      </div>
     </nav>
 
+    <!-- Welcome Section with Image Slideshow -->
     <header>
-        <h1>Welcome to Micro:bit Learning</h1>
-        <p>Your gateway to fun projects for sustainability!</p>
+      <div class="slideshow-container">
+        <!-- Slide 1 -->
+        <div class="mySlides">
+          <img
+            src="images/slide1.jpg"
+            alt="Micro:bit Image 1"
+            class="slide-image"
+          />
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="mySlides">
+          <img
+            src="images/slide2.jpg"
+            alt="Micro:bit Image 2"
+            class="slide-image"
+          />
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="mySlides">
+          <img
+            src="images/slide3.jpg"
+            alt="Micro:bit Image 3"
+            class="slide-image"
+          />
+        </div>
+
+        <!-- Dots for Navigation -->
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
     </header>
 
-    <section id="home-intro">
-        <div class="fact">
-            <img src="microbit-image1.jpg" alt="Micro:bit Image">
-            <p>Micro:bit is a pocket-sized computer used for digital learning and coding.</p>
+    <!-- Micro:bit Info Section with Zig-Zag Cards -->
+    <section id="microbit-info">
+      <div class="info-card zigzag-left">
+        <div class="info-image">
+          <img src="images/microbit-image1.jpg" alt="Micro:bit Image" />
         </div>
-        <div class="fact">
-            <img src="microbit-image2.jpg" alt="Micro:bit Image">
-            <p>It includes LED lights, buttons, and sensors to make fun projects.</p>
+        <div class="info-text">
+          <h2>About Micro:bit</h2>
+          <p>
+            Micro:bit is a pocket-sized computer that introduces you to coding
+            and electronics.
+          </p>
         </div>
-        <div class="fact">
-            <img src="microbit-image3.jpg" alt="Micro:bit Image">
-            <p>Micro:bits are used globally to teach coding in classrooms.</p>
+      </div>
+
+      <div class="info-card zigzag-right">
+        <div class="info-text">
+          <h2>LED Display and Sensors</h2>
+          <p>
+            It has a built-in LED display, buttons, sensors, and more for
+            endless possibilities.
+          </p>
         </div>
-        <div class="fact">
-            <img src="microbit-image4.jpg" alt="Micro:bit Image">
-            <p>You can connect micro:bits to sensors and other devices!</p>
+        <div class="info-image">
+          <img src="images/microbit-image2.jpg" alt="Micro:bit Image" />
         </div>
+      </div>
+
+      <div class="info-card zigzag-left">
+        <div class="info-image">
+          <img src="images/microbit-image3.jpg" alt="Micro:bit Image" />
+        </div>
+        <div class="info-text">
+          <h2>Learn Programming</h2>
+          <p>
+            Micro:bits are widely used in schools worldwide to teach
+            programming.
+          </p>
+        </div>
+      </div>
+
+      <div class="info-card zigzag-right">
+        <div class="info-text">
+          <h2>Multiple Coding Options</h2>
+          <p>
+            You can code using block coding, Python, or JavaScript with your
+            Micro:bit.
+          </p>
+        </div>
+        <div class="info-image">
+          <img src="images/microbit-image4.jpg" alt="Micro:bit Image" />
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>Designed for students and advisors</p>
-    </footer>
-
-    <script src="scripts/script.js"></script>
-</body>
+    <!-- Link to JavaScript -->
+    <script src="scripts/home.js"></script>
+  </body>
 </html>

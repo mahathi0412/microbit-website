@@ -1,19 +1,266 @@
-#home-intro img {
-    width: 200px;
-    transition: transform 0.5s ease;
+/* Global Styles */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    /* background-image: url('images/background-image.jpg');
+    background-size: cover; */
+    background-position: center;
+    background-attachment: fixed; /* Ensure background stays in place while scrolling */
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-#home-intro img:hover {
-    transform: scale(1.1);
+.background-image {
+    background-image: url('images/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.7; /* Make the background image slightly transparent */
 }
 
-#home-intro {
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #4a5bf5;
+    padding: 20px;
     display: flex;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.fact {
-    flex: 0 0 300px;
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
     margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+nav ul li a:hover {
+    background-color: rgb(131, 170, 241);
+    border-radius: 5px;
+}
+
+.brand {
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: 400px;
+    margin: auto;
+    overflow: hidden; /* Hide overflow for scrolling effect */
+    background-color: #000;
+}
+
+.mySlides {
+    display: none; /* Hide all slides initially */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease; /* Smooth sliding transition */
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    z-index: 10;
+}
+
+/* Dot indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Zig-Zag Card Style */
+#microbit-info {
+    padding: 50px 20px;
+}
+
+.info-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f37019;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 60%; /* Reduce the width of the cards */
+    max-width: 1200px;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Alternate Layout for Zig-Zag Effect */
+.zigzag-left .info-image {
+    order: 1;
+}
+
+.zigzag-right .info-image {
+    order: 2;
+}
+
+.info-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-text {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.info-text h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.2em;
+    color: #fcfcfc;
+    margin-bottom: 10px;
+}
+
+.info-text p {
+    font-size: 1.5em;
+    color: #fffbfb;
+    line-height: 1.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-image img {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Card Container Styles */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+/* Card Styles */
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fae207;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+}
+.card {
+    width: 470px;
+    height: 450px;
+    perspective: 1000px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front and Back of the Card */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-back {
+    background-color: #fac042;
+    color: rgb(8, 8, 8);
+    transform: rotateY(180deg);
+    padding: 20px;
+    box-sizing: border-box;
 }
