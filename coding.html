@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro:bit Coding</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="components.html">Components</a></li>
+            <li><a href="coding.html">Coding with Micro:bits</a></li>
+            <li><a href="projects.html">Project Ideas</a></li>
+        </ul>
+        <div class="brand">
+            <span>Oregon MESA | Micro:bit</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section for Coding Introduction -->
+    <header class="coding-hero">
+        <h1>Coding with Micro:bit</h1>
+        <p>Micro:bit can be programmed using Block Coding, Python, or JavaScript. Learn more about each coding method below and try examples!</p>
+    </header>
+
+    <!-- Coding Sections -->
+    <section id="coding-sections">
+
+        <!-- Block Coding Section -->
+        <div class="coding-section block-coding">
+            <h2>Block Coding (MakeCode)</h2>
+            <p>Block Coding with MakeCode provides a beginner-friendly way to program the Micro:bit using a drag-and-drop interface. Students can use pre-built blocks to control Micro:bit's features without needing to write code. It’s ideal for students new to coding.</p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Drag-and-drop block-based interface.</li>
+                <li>No syntax errors – perfect for beginners.</li>
+                <li>Interactive simulations available in MakeCode editor.</li>
+            </ul>
+            <h3>Important Blocks:</h3>
+            <div class="syntax-examples">
+                <div class="syntax-card">
+                    <h3>Show LEDs</h3>
+                    <p>Lights up LEDs on the Micro:bit’s 5x5 grid in patterns.</p>
+                    <pre><code>show leds block</code></pre>
+                </div>
+                <div class="syntax-card">
+                    <h3>Button Press Block</h3>
+                    <p>Detects when button A or B is pressed and triggers an action.</p>
+                    <pre><code>on button A pressed block</code></pre>
+                </div>
+                <div class="syntax-card">
+                    <h3>Accelerometer Block</h3>
+                    <p>Detects the movement and tilting of the Micro:bit.</p>
+                    <pre><code>on shake block</code></pre>
+                </div>
+                <div class="syntax-card">
+                    <h3>Compass Block</h3>
+                    <p>Detects the direction the Micro:bit is facing.</p>
+                    <pre><code>on compass heading</code></pre>
+                </div>
+                <div class="syntax-card">
+                    <h3>Radio Block</h3>
+                    <p>Enables wireless communication between Micro:bits.</p>
+                    <pre><code>radio send number block</code></pre>
+                </div>
+            </div>
+            <h3>Sample Project:</h3>
+            <p>Control an LED pattern with button presses and shake detection.</p>
+            <pre><code>on button A pressed -> turn on LEDs in heart shape | shake -> show random number</code></pre>
+        </div>
+
+        <!-- Python Section -->
+        <div class="coding-section python-coding">
+            <h2>Python Coding</h2>
+            <p>Python allows students to control the Micro:bit using written code. It’s more flexible than block coding and provides deeper control of Micro:bit’s features. Python is great for students transitioning from visual to text-based programming.</p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Text-based programming language.</li>
+                <li>More flexibility and power over Micro:bit features.</li>
+                <li>Compatible with many libraries, such as MicroPython.</li>
+            </ul>
+            <h3>Common Python Syntax:</h3>
+            <div class="syntax-examples">
+                <div class="syntax-card">
+                    <h3>Display Message</h3>
+                    <p>Scrolls a message across the Micro:bit's LED display.</p>
+                    <pre><code>from microbit import *\ndisplay.scroll('Hello!')</code></pre>
+                </div>
+                <div class="syntax-card">
+                    <h3>Button Press Detection</h3>
+                    <p>Checks if button A is pressed and displays an icon.</p>
+                    <pre><code>if button_a.is_pressed():\n    display.show('A')</code></pre>
+                </div>
+                <div class="syntax-card">
+                    <h3>Accelerometer</h3>
+                    <p>Detects shaking or tilting of the Micro:bit.</p>
+                    <pre><code>if accelerometer.was_gesture('shake'):\n    display.show('S')</code></pre>
+                </div>
+                <div class="syntax-card">
+                    <h3>Compass</h3>
+                    <p>Detects the direction the Micro:bit is facing.</p>
+                    <pre><code>compass.calibrate()\nheading = compass.heading()</code></pre>
+                </div>
+                <div class="syntax-card">
+                    <h3>Temperature Sensor</h3>
+                    <p>Reads the current temperature from the sensor.</p>
+                    <pre><code>temperature = temperature()\ndisplay.scroll(temperature)</code></pre>
+                </div>
+            </div>
+            <h3>Sample Project:</h3>
+            <p>Program Micro:bit to show the temperature when button A is pressed:</p>
+            <pre><code>from microbit import *\nif button_a.is_pressed():\n    display.scroll(temperature())</code></pre>
+        </div>
+
+        <!-- JavaScript Section -->
+        <div class="coding-section js-coding">
+            <h2>JavaScript Coding</h2>
+            <p>JavaScript is another text-based option for coding the Micro:bit. It’s a great step for students familiar with block coding who want to transition to more advanced, text-based programming.</p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Text-based coding using MakeCode editor.</li>
+                <li>Shares syntax and concepts with other web-based programming.</li>
+                <li>Provides flexibility while still being easy to use.</li>
+            </ul>
+            <h3>Common JavaScript Syntax:</h3>
+            <div class="syntax-examples">
+                <div class="syntax-card">
+                    <h3>Show LEDs</h3>
+                    <p>Turns on LEDs on the Micro:bit’s display in a heart pattern.</p>
+                    <pre><code>basic.showLeds(\n`# . . . #`\n)`</code></pre>
+                </div>
+                <div class="syntax-card">
+                    <h3>Button Press Detection</h3>
+                    <p>Detects button presses and triggers an action.</p>
+                    <pre><code>input.onButtonPressed(Button.A, function () {\n  basic.showIcon(IconNames.Happy)\n})</code></pre>
+                </div>
+                <div class="syntax-card">
+                    <h3>Accelerometer</h3>
+                    <p>Detects shaking or tilting of the Micro:bit.</p>
+                    <pre><code>input.onGesture(Gesture.Shake, function () {\n  basic.showString("Shake!")\n})</code></pre>
+                </div>
+                <div class="syntax-card">
+                    <h3>Compass</h3>
+                    <p>Detects the direction the Micro:bit is facing.</p>
+                    <pre><code>let heading = input.compassHeading()\nbasic.showNumber(heading)</code></pre>
+                </div>
+                <div class="syntax-card">
+                    <h3>Temperature Sensor</h3>
+                    <p>Reads the temperature and displays it on the LED screen.</p>
+                    <pre><code>let temp = input.temperature()\nbasic.showNumber(temp)</code></pre>
+                </div>
+            </div>
+            <h3>Sample Project:</h3>
+            <p>Program the Micro:bit to detect button A press and show a smiley face:</p>
+            <pre><code>input.onButtonPressed(Button.A, function () {\n  basic.showIcon(IconNames.Happy)\n})</code></pre>
+        </div>
+
+    </section>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -28,7 +28,7 @@ body {
 
 /* Navigation Bar Styles */
 nav {
-    background-color: #4a5bf5;
+    background-color: #3b3b3b;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -47,7 +47,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
@@ -55,7 +55,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgb(131, 170, 241);
+    background-color: rgb(131, 132, 134);
     border-radius: 5px;
 }
 
@@ -204,7 +204,7 @@ nav ul li a:hover {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #fae207;
+    background-color: #fac042;
 }
 
 h1 {
@@ -258,9 +258,197 @@ p {
 }
 
 .card-back {
-    background-color: #fac042;
+    background-color: #fac042; /* Green background */
     color: rgb(8, 8, 8);
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); /* Flip the card on Y-axis */
+    padding: 20px; /* Add padding */
+    box-sizing: border-box; /* Make padding inside the box */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
+}
+
+.card-back h2 {
+    font-size: 1.8em; /* Size for the component title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.card-back p {
+    font-size: 1.2em; /* Size for the component description */
+    line-height: 1.5em; /* Line height for readability */
+}
+
+/* Coding Sections */
+#coding-sections {
     padding: 20px;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Block Coding Section with Pastel Blue */
+.block-coding {
+    background-color: #aad4f7; /* Light pastel blue */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Python Coding Section with Pastel Green */
+.python-coding {
+    background-color: #b9f8ad; /* Light pastel green */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* JavaScript Coding Section with Pastel Yellow */
+.js-coding {
+    background-color: #fddf83; /* Light pastel yellow */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect for Section Cards */
+.coding-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Syntax Examples */
+.syntax-examples {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.syntax-card {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    width: calc(50% - 20px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.syntax-card:hover {
+    transform: translateY(-5px);
+}
+
+.syntax-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.syntax-card pre {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    overflow-x: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .syntax-card {
+        width: 100%;
+    }
+}
+
+/* Projects Page Styles */
+.projects-hero {
+    background-color: #0c56aa;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Project Cards with Pastel Colors */
+.project-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Each Project Card with a Different Pastel Color */
+.project-card:nth-child(1) {
+    background-color: #fabedf; /* Light Pastel Blue */
+}
+
+.project-card:nth-child(2) {
+    background-color: #f5f584; /* Light Pastel Yellow */
+}
+
+.project-card:nth-child(3) {
+    background-color: #cfeca9; /* Light Pastel Green */
+}
+
+.project-card:nth-child(4) {
+    background-color: #a2cff7; /* Light Pastel Pink */
+}
+
+.project-card:nth-child(5) {
+    background-color: #f0bceb; /* Light Pastel Blue */
+}
+
+.project-card:nth-child(6) {
+    background-color: #f8df95; /* Light Pastel Yellow */
+}
+
+.project-card:nth-child(7) {
+    background-color: #cefac6; /* Light Pastel Green */
+}
+
+.project-card:nth-child(8) {
+    background-color: #f7b8b8; /* Light Pastel Red */
+}
+
+.project-card h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1.2em;
+}
+
+/* Additional Project Ideas Section */
+#more-projects {
+    text-align: center;
+    margin-top: 20px;
+    padding: 40px;
+}
+
+#more-projects h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#more-projects p {
+    font-size: 1.2em;
+}
+
+#more-projects a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#more-projects a:hover {
+    text-decoration: underline;
 }

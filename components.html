@@ -1,130 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Micro:bit Components</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
     <style>
-        /* Add background image to the body */
-        body {
-          background-image: url('images/background3.jpg'); /* Adjust path as needed */
-          background-size: cover; /* Cover the full page */
-          background-position: center; /* Center the image */
-          background-repeat: no-repeat; /* Don't repeat the image */
-          background-attachment: fixed; /* Make the image fixed during scroll */
-          margin: 0;
-          padding: 0;
-          color: #333;
-        }
-      </style>
-</head>
-<body>
+      /* Add background image to the body */
+      body {
+        background-image: url("images/background3.jpg"); /* Adjust path as needed */
+        background-size: cover; /* Cover the full page */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Don't repeat the image */
+        background-attachment: fixed; /* Make the image fixed during scroll */
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
     <div class="background-image"></div>
     <!-- Navigation Bar -->
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="components.html">Components</a></li>
-            <li><a href="coding.html">Coding with Micro:bits</a></li>
-            <li><a href="projects.html">Project Ideas</a></li>
-            <li><a href="help.html">Help</a></li>
-        </ul>
-        <div class="brand">
-            <span>Oregon MESA | Micro:bit</span>
-        </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="components.html">Components</a></li>
+        <li><a href="coding.html">Coding with Micro:bits</a></li>
+        <li><a href="projects.html">Project Ideas</a></li>
+      </ul>
+      <div class="brand">
+        <span>Oregon MESA | Micro:bit</span>
+      </div>
     </nav>
 
     <!-- Components Page Header -->
     <header>
-        <h1>Micro:bit Components</h1>
-        <p>Click on each card to learn more about the components of Micro:bit</p>
+      <h1>Micro:bit Components</h1>
+      <p>Click on each card to learn more about the components of Micro:bit</p>
     </header>
 
     <!-- Components Card Section -->
     <section id="components">
-        <div class="card-container">
-            <!-- Card 1 -->
-            <div class="card" onclick="flipCard(this)">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <img src="images/component1.jpg" alt="Micro:bit Component 1">
-                    </div>
-                    <div class="card-back">
-                        <h2>LED Display</h2>
-                        <p>The Micro:bit has 25 programmable LED lights that can display text and symbols.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="card-container">
 
-            <!-- Card 2 -->
-            <div class="card" onclick="flipCard(this)">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <img src="images/component2.jpg" alt="Micro:bit Component 2">
-                    </div>
-                    <div class="card-back">
-                        <h2>Accelerometer</h2>
-                        <p>The built-in accelerometer detects motion and can sense changes in position.</p>
-                    </div>
-                </div>
+        <!-- Card 1 - LED Display-->
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/component1.jpg" alt="Micro:bit Component 1" />
             </div>
-
-            <!-- Card 3 -->
-            <div class="card" onclick="flipCard(this)">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <img src="images/component3.jpg" alt="Micro:bit Component 3">
-                    </div>
-                    <div class="card-back">
-                        <h2>Buttons</h2>
-                        <p>The Micro:bit has two programmable buttons to control programs or interact with games.</p>
-                    </div>
-                </div>
+            <div class="card-back">
+              <h2>LED Display</h2>
+              <p>
+                The Micro:bit has 25 programmable LED lights that can display
+                text and symbols.
+              </p>
             </div>
-
-            <!-- Card 4 -->
-            <div class="card" onclick="flipCard(this)">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <img src="images/component4.jpg" alt="Micro:bit Component 4">
-                    </div>
-                    <div class="card-back">
-                        <h2>LED Display</h2>
-                        <p>The Micro:bit has 25 programmable LED lights that can display text and symbols.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="card" onclick="flipCard(this)">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <img src="images/component5.jpg" alt="Micro:bit Component 5">
-                    </div>
-                    <div class="card-back">
-                        <h2>Accelerometer</h2>
-                        <p>The built-in accelerometer detects motion and can sense changes in position.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="card" onclick="flipCard(this)">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <img src="images/component6.jpg" alt="Micro:bit Component 6">
-                    </div>
-                    <div class="card-back">
-                        <h2>Buttons</h2>
-                        <p>The Micro:bit has two programmable buttons to control programs or interact with games.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- More cards can be added below as needed -->
+          </div>
         </div>
+
+        <!-- Card 2 - Accelerometer -->
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/component2.jpg" alt="Micro:bit Component 2" />
+            </div>
+            <div class="card-back">
+              <h2>Accelerometer</h2>
+              <p>
+                The built-in accelerometer detects motion and can sense changes
+                in position.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 - Buttons -->
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/component3.jpg" alt="Micro:bit Component 3" />
+            </div>
+            <div class="card-back">
+              <h2>Buttons</h2>
+              <p>
+                The Micro:bit has two programmable buttons to control programs
+                or interact with games.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 - Compass -->
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/component4.jpg" alt="Compass" />
+            </div>
+            <div class="card-back">
+              <h2>Compass</h2>
+              <p>
+                The built-in compass detects the direction you're facing and can
+                sense magnetic fields.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 - Radio -->
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/component5.jpg" alt="Radio" />
+            </div>
+            <div class="card-back">
+              <h2>Radio</h2>
+              <p>
+                The radio feature allows the Micro:bit to communicate wirelessly
+                with other devices.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 - Microphone -->
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/component6.jpg" alt="Microphone" />
+            </div>
+            <div class="card-back">
+              <h2>Microphone</h2>
+              <p>
+                The microphone allows you to capture sound and respond to noise
+                levels in your programs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 - Temperature Sensor -->
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/component7.jpg" alt="Temperature Sensor" />
+            </div>
+            <div class="card-back">
+              <h2>Temperature Sensor</h2>
+              <p>
+                The built-in temperature sensor can detect the current
+                temperature of the surroundings.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 - Light Sensor -->
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/component8.jpg" alt="Light Sensor" />
+            </div>
+            <div class="card-back">
+              <h2>Light Sensor</h2>
+              <p>
+                The light sensor measures the amount of light around the
+                Micro:bit and can trigger responses.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9 - Bluetooth -->
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/component9.jpg" alt="Bluetooth" />
+            </div>
+            <div class="card-back">
+              <h2>Bluetooth</h2>
+              <p>
+                The Bluetooth feature allows the Micro:bit to connect and
+                communicate with mobile devices.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 10 - Edge Connector -->
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/edge-connector.jpg" alt="Edge Connector" />
+            </div>
+            <div class="card-back">
+              <h2>Edge Connector</h2>
+              <p>
+                The 25-pin edge connector allows you to connect external
+                components like sensors, motors, and more.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 11 - Reset Button -->
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/reset-button.jpg" alt="Reset Button" />
+            </div>
+            <div class="card-back">
+              <h2>Reset Button</h2>
+              <p>
+                A reset button at the back of the board to restart the Micro:bit
+                without turning it off.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 12 - I2C and SPI Interfaces -->
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/i2c-spi.jpg" alt="I2C and SPI Interfaces" />
+            </div>
+            <div class="card-back">
+              <h2>I2C and SPI Interfaces</h2>
+              <p>
+                Used to connect external devices using standard communication
+                protocols.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 13 - USB Interface -->
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/usb-interface.jpg" alt="USB Interface" />
+            </div>
+            <div class="card-back">
+              <h2>USB Interface</h2>
+              <p>
+                Used for connecting the Micro:bit to a computer for power and
+                programming.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 14 - Power Supply Connector (JST) -->
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img
+                src="images/power-supply.jpg"
+                alt="Power Supply Connector (JST)"
+              />
+            </div>
+            <div class="card-back">
+              <h2>Power Supply Connector (JST)</h2>
+              <p>A connector for powering the Micro:bit with a battery pack.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 15 - Ground (GND) -->
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/ground-gnd.jpg" alt="Ground (GND)" />
+            </div>
+            <div class="card-back">
+              <h2>Ground (GND)</h2>
+              <p>
+                The GND (ground) pin is used to complete circuits when
+                connecting external components.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- More cards can be added below as needed -->
+      </div>
     </section>
 
     <script src="scripts/components.js"></script>
-</body>
+  </body>
 </html>
