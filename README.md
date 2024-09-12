@@ -10,7 +10,7 @@ A **Micro:bit** is a pocket-sized computer that introduces you to coding and ele
 - **Project Ideas**: Try out some fun and educational projects using Micro:bit, including a step counter, digital compass, and weather station.
 
 ## Contact Us
-If you would like more information, need assistance, or are interested in **training**, feel free to reach out to our Educational Coordinator, Jonas Hudnall. We're here to support you in learning more about Micro:bit and exploring the exciting world of coding and electronics.
+If you would like more information, or need assistance, please get in touch with our Education Coordinator, Jonas Hudnall at jhudnall@pdx.edu or are interested in **training**, reach out to out Curriculum and Coding Specialist, Mahathi Mandelli at mandelli@pdx.edu. We're here to support you in learning more about Micro:bit and exploring the exciting world of coding and electronics.
 
 ## Access the website through 
 **https://mahathi0412.github.io/microbit-website/index.html**
