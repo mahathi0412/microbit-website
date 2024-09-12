@@ -1,10 +1,9 @@
-/* Global Styles */
 body {
     font-family: 'Comic Sans MS', sans-serif;
     /* background-image: url('images/background-image.jpg');
     background-size: cover; */
     background-position: center;
-    background-attachment: fixed; /* Ensure background stays in place while scrolling */
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
     color: #333;
@@ -22,11 +21,10 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    opacity: 0.7; /* Make the background image slightly transparent */
+    opacity: 0.7;
 }
 
 
-/* Navigation Bar Styles */
 nav {
     background-color: #3b3b3b;
     padding: 20px;
@@ -65,22 +63,21 @@ nav ul li a:hover {
     font-size: 1.3em;
 }
 
-/* Slideshow container */
 .slideshow-container {
     position: relative;
     max-width: 100%;
     height: 400px;
     margin: auto;
-    overflow: hidden; /* Hide overflow for scrolling effect */
+    overflow: hidden; 
     background-color: #000;
 }
 
 .mySlides {
-    display: none; /* Hide all slides initially */
+    display: none;
     position: absolute;
     width: 100%;
     height: 100%;
-    transition: transform 1s ease; /* Smooth sliding transition */
+    transition: transform 1s ease; 
 }
 
 .mySlides img {
@@ -98,7 +95,6 @@ nav ul li a:hover {
     z-index: 10;
 }
 
-/* Dot indicators */
 .dot {
     height: 15px;
     width: 15px;
@@ -113,7 +109,6 @@ nav ul li a:hover {
     background-color: #717171;
 }
 
-/* Zig-Zag Card Style */
 #microbit-info {
     padding: 50px 20px;
 }
@@ -129,7 +124,7 @@ nav ul li a:hover {
     background-color: #f37019;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 60%; /* Reduce the width of the cards */
+    width: 60%;
     max-width: 1200px;
 }
 
@@ -138,7 +133,6 @@ nav ul li a:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Alternate Layout for Zig-Zag Effect */
 .zigzag-left .info-image {
     order: 1;
 }
@@ -172,7 +166,6 @@ nav ul li a:hover {
     line-height: 1.5em;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .info-card {
         flex-direction: column;
@@ -191,15 +184,12 @@ nav ul li a:hover {
     }
 }
 
-/* Card Container Styles */
 .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 20px;
 }
-
-/* Card Styles */
 
 header {
     text-align: center;
@@ -235,7 +225,6 @@ p {
     transform: rotateY(180deg);
 }
 
-/* Front and Back of the Card */
 .card-front, .card-back {
     position: absolute;
     width: 100%;
@@ -258,29 +247,28 @@ p {
 }
 
 .card-back {
-    background-color: #fac042; /* Green background */
+    background-color: #fac042;
     color: rgb(8, 8, 8);
-    transform: rotateY(180deg); /* Flip the card on Y-axis */
-    padding: 20px; /* Add padding */
-    box-sizing: border-box; /* Make padding inside the box */
+    transform: rotateY(180deg); 
+    padding: 20px;
+    box-sizing: border-box; 
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    justify-content: flex-start; /* Align content to the top */
-    align-items: center; /* Center horizontally */
-    text-align: center; /* Center text */
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center; 
+    text-align: center; 
 }
 
 .card-back h2 {
-    font-size: 1.8em; /* Size for the component title */
-    margin-bottom: 10px; /* Space below the title */
+    font-size: 1.8em;
+    margin-bottom: 10px;
 }
 
 .card-back p {
-    font-size: 1.2em; /* Size for the component description */
-    line-height: 1.5em; /* Line height for readability */
+    font-size: 1.2em; 
+    line-height: 1.5em;
 }
 
-/* Coding Sections */
 #coding-sections {
     padding: 20px;
     display: flex;
@@ -288,40 +276,35 @@ p {
     gap: 40px;
 }
 
-/* Block Coding Section with Pastel Blue */
 .block-coding {
-    background-color: #aad4f7; /* Light pastel blue */
+    background-color: #aad4f7;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
-/* Python Coding Section with Pastel Green */
 .python-coding {
-    background-color: #b9f8ad; /* Light pastel green */
+    background-color: #b9f8ad; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
-/* JavaScript Coding Section with Pastel Yellow */
 .js-coding {
-    background-color: #fddf83; /* Light pastel yellow */
+    background-color: #fddf83; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
-/* Hover Effect for Section Cards */
 .coding-section:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Syntax Examples */
 .syntax-examples {
     display: flex;
     gap: 20px;
@@ -355,14 +338,12 @@ p {
     overflow-x: auto;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .syntax-card {
         width: 100%;
     }
 }
 
-/* Projects Page Styles */
 .projects-hero {
     background-color: #0c56aa;
     color: white;
@@ -378,44 +359,42 @@ p {
     padding: 20px;
 }
 
-/* Project Cards with Pastel Colors */
 .project-card {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Each Project Card with a Different Pastel Color */
 .project-card:nth-child(1) {
-    background-color: #fabedf; /* Light Pastel Blue */
+    background-color: #fabedf;
 }
 
 .project-card:nth-child(2) {
-    background-color: #f5f584; /* Light Pastel Yellow */
+    background-color: #f5f584;
 }
 
 .project-card:nth-child(3) {
-    background-color: #cfeca9; /* Light Pastel Green */
+    background-color: #cfeca9; 
 }
 
 .project-card:nth-child(4) {
-    background-color: #a2cff7; /* Light Pastel Pink */
+    background-color: #a2cff7; 
 }
 
 .project-card:nth-child(5) {
-    background-color: #f0bceb; /* Light Pastel Blue */
+    background-color: #f0bceb;
 }
 
 .project-card:nth-child(6) {
-    background-color: #f8df95; /* Light Pastel Yellow */
+    background-color: #f8df95;
 }
 
 .project-card:nth-child(7) {
-    background-color: #cefac6; /* Light Pastel Green */
+    background-color: #cefac6;
 }
 
 .project-card:nth-child(8) {
-    background-color: #f7b8b8; /* Light Pastel Red */
+    background-color: #f7b8b8; 
 }
 
 .project-card h2 {
@@ -452,3 +431,4 @@ p {
 #more-projects a:hover {
     text-decoration: underline;
 }
+
