@@ -12,7 +12,7 @@ A **Micro:bit** is a pocket-sized computer that introduces you to coding and ele
 ## Contact Us
 If you would like more information, need assistance, or are interested in **training**, feel free to reach out to our Educational Coordinator, Jonas Hudnall. We're here to support you in learning more about Micro:bit and exploring the exciting world of coding and electronics.
 
-##Access the website through 
+## Access the website through 
 **https://mahathi0412.github.io/microbit-website/index.html**
 
 
