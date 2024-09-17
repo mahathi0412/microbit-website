@@ -1,7 +1,5 @@
 body {
     font-family: 'Comic Sans MS', sans-serif;
-    /* background-image: url('images/background-image.jpg');
-    background-size: cover; */
     background-position: center;
     background-attachment: fixed;
     margin: 0;
@@ -102,7 +100,7 @@ nav ul li a:hover {
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: background-color 0.4s ease;
 }
 
 .active {
@@ -164,30 +162,6 @@ nav ul li a:hover {
     font-size: 1.5em;
     color: #fffbfb;
     line-height: 1.5em;
-}
-
-@media (max-width: 768px) {
-    .info-card {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .info-image img {
-        margin-bottom: 20px;
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 100%;
-        max-width: 350px;
-        height: auto;
-    }
 }
 
 .card-container {
@@ -296,28 +270,23 @@ p {
     gap: 40px;
 }
 
-.block-coding {
-    background-color: #aad4f7;
+.block-coding, .python-coding, .js-coding {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+}
+
+.block-coding {
+    background-color: #aad4f7;
 }
 
 .python-coding {
-    background-color: #b9f8ad; 
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    background-color: #b9f8ad;
 }
 
 .js-coding {
-    background-color: #fddf83; 
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    background-color: #fddf83;
 }
 
 .coding-section:hover {
@@ -356,12 +325,6 @@ p {
     border-radius: 5px;
     font-size: 0.9em;
     overflow-x: auto;
-}
-
-@media (max-width: 768px) {
-    .syntax-card {
-        width: 100%;
-    }
 }
 
 .projects-hero {
@@ -452,3 +415,110 @@ p {
     text-decoration: underline;
 }
 
+@media (max-width: 1024px) {
+    .info-card {
+        width: 80%;
+    }
+
+    .project-card {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Responsive for Mobile Phones */
+@media (max-width: 768px) {
+    .info-card {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .info-text h2 {
+        font-size: 1.8em;
+    }
+
+    .info-text p {
+        font-size: 1.2em;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+
+    .projects-hero {
+        padding: 20px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .syntax-card {
+        width: 100%;
+    }
+
+    .slideshow-container {
+        height: 250px;
+    }
+
+    .text {
+        font-size: 1.5em;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
