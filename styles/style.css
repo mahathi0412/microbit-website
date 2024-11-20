@@ -24,11 +24,16 @@ body {
 
 
 nav {
-    background-color: #3b3b3b;
+    background-color: #2b2121;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position : fixed;
+    top : 0;
+    width : 98%;
+    z-index : 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -48,6 +53,10 @@ nav ul li a {
     font-weight: bold;
     padding: 10px;
     font-size: 1.3em;
+}
+
+body {
+    margin-top: 60px;
 }
 
 nav ul li a:hover {
@@ -108,7 +117,7 @@ nav ul li a:hover {
 }
 
 #microbit-info {
-    padding: 50px 20px;
+    padding: 40px 20px;
 }
 
 .info-card {
