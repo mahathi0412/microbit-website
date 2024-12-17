@@ -1,4 +1,4 @@
-Welcome to the **Micro:bit Introduction and Project Ideas** website! This website is designed to give both students and advisors a basic understanding of what a **Micro:bit** is, the components it includes, how it can be used, and a few hands-on project ideas to get started.
+Welcome to the **Micro:bit Introduction and Project Ideas** website! This website is designed to give both students and advisors a basic understanding of what a **Micro:bit** is, the components it includes, how it can be used, and a few hands-on project ideas to get started, and a fun quiz to test your knowledge on micro:bits!
 
 ## What is a Micro:bit?
 A **Micro:bit** is a pocket-sized computer that introduces you to coding and electronics. It's a versatile and powerful tool that can be used to create various projects, from basic programming to more complex systems involving sensors and other electronics.
