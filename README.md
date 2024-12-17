@@ -1,7 +1,7 @@
 Welcome to the **Micro:bit Introduction and Project Ideas** website! This website is designed to give both students and advisors a basic understanding of what a **Micro:bit** is, the components it includes, how it can be used, and a few hands-on project ideas to get started.
 
 ## What is a Micro:bit?
-A **Micro:bit** is a pocket-sized computer that introduces you to coding and electronics. It's a versatile and powerful tool that can be used to create a wide variety of projects, from basic programming to more complex systems involving sensors and other electronics.
+A **Micro:bit** is a pocket-sized computer that introduces you to coding and electronics. It's a versatile and powerful tool that can be used to create various projects, from basic programming to more complex systems involving sensors and other electronics.
 
 ## Website Features
 - **Introduction to Micro:bit**: Learn what a Micro:bit is and how it works.
@@ -11,7 +11,7 @@ A **Micro:bit** is a pocket-sized computer that introduces you to coding and ele
 - **Quiz**: Test your Micro:bit knowledge with engaging questions and get your score instantly.
 
 ## Contact Us
-If you would like more information, or need assistance, please get in touch with our Education Coordinator, Jonas Hudnall at jhudnall@pdx.edu or are interested in **training**, reach out to out Curriculum and Coding Specialist, Mahathi Mandelli at mandelli@pdx.edu. We're here to support you in learning more about Micro:bit and exploring the exciting world of coding and electronics.
+If you would like more information, or need assistance, please get in touch with our Education Coordinator, Jonas Hudnall at jhudnall@pdx.edu or are interested in **training**, reach out to Curriculum and Coding Specialist, Mahathi Mandelli at mandelli@pdx.edu. We're here to help you learn more about Micro:bit and explore the exciting world of coding and electronics.
 
 ## Access the website through 
 **https://mahathi0412.github.io/microbit-website/index.html**
