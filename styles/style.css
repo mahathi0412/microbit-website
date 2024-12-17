@@ -424,6 +424,157 @@ p {
     text-decoration: underline;
 }
 
+main {
+    padding : 20px;
+    max-width:800px;
+    margin: 0 auto;
+    background-color: #717171;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1{
+    font-family:'Pacifivo',cursive;
+    text-align:center;
+    font-size:2.5em;
+    color:#fef9e7;
+    margin-bottom: 10px;
+}
+
+header p{
+    font-size:1.3em;
+    text-align:center;
+    color:#333;
+}
+
+.quiz-header {
+    text-align: center;
+    background-color: #f7b731;
+    padding: 30px;
+    color: #fff;
+}
+
+.quiz-container {
+    padding: 30px;
+    margin: 100px auto;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question p {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.result-container {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2b2121;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fddf83;
+    border: 2px solid #fac042;
+    border-radius: 5px;
+}
+.submit-btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #f37019;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #d95c17;
+}
+
+#quiz-result {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Responsive Quiz Page */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    .quiz-question {
+        padding: 10px;
+    }
+
+    .quiz-question h3 {
+        font-size: 1.1em;
+    }
+
+    .quiz-question label {
+        font-size: 1em;
+    }
+
+    #submit-quiz {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+
+    #quiz-result {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .quiz-question h3 {
+        font-size: 1em;
+    }
+
+    .quiz-question label {
+        font-size: 0.9em;
+    }
+
+    #submit-quiz {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+
+    #quiz-result {
+        font-size: 1.2em;
+    }
+    
+}
 @media (max-width: 1024px) {
     .info-card {
         width: 80%;
