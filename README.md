@@ -8,6 +8,7 @@ A **Micro:bit** is a pocket-sized computer that introduces you to coding and ele
 - **Components Overview**: Discover the key components of a Micro:bit, such as its LED display, buttons, accelerometer, compass, and more.
 - **Coding with Micro:bit**: Explore the different ways to code with Micro:bit using block coding, Python, and JavaScript.
 - **Project Ideas**: Try out some fun and educational projects using Micro:bit, including a step counter, digital compass, and weather station.
+- **Quiz**: Test your Micro:bit knowledge with engaging questions and get your score instantly.
 
 ## Contact Us
 If you would like more information, or need assistance, please get in touch with our Education Coordinator, Jonas Hudnall at jhudnall@pdx.edu or are interested in **training**, reach out to out Curriculum and Coding Specialist, Mahathi Mandelli at mandelli@pdx.edu. We're here to support you in learning more about Micro:bit and exploring the exciting world of coding and electronics.
